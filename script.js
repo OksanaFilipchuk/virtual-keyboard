@@ -70,10 +70,7 @@ class Keyboard {
             keyElement.classList.add("key");
             keyElement.innerHTML = `<span class = "key-icon">${key}</span>`;
 
-              // const obj= new Map ([["`", "Backquote"],
-        //             ["Tab", "Tab"], ["CapsLock", "CapsLock"], ["Enter", "Enter"], ["Del","Del"], ["Backspace", "Backspace"], [",","Comma"], ["=", "Equal"],["-", "Minus"], ["&#9664;","ArrowLeft"], ["&#9660;", "ArrowDown"], ["&#9654;","ArrowRight"], ["&#9650;","ArrowUp"]
-        // //         ]) ;
-        //     if(obj[key]){key.classList.add(obj.get(key))}
+            
 
             if(key >= 0 && key <=9){
                 keyElement.classList.add("digit"+key)
