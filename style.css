@@ -1,0 +1,106 @@
+h1{
+    color: rgb(99, 98, 98);
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+h2{
+    color: rgb(99, 98, 98);
+    text-align: center;
+    font-size: 12px;
+    width: 50%;
+    margin:30px  auto;
+}
+textarea{
+    display: block;
+    width: 400px;
+    height: 100px;
+    margin: 0 auto 10px;
+}
+textarea:focus{
+    outline: none;
+}
+.keyboard {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 3px;
+    
+}
+.keyboard-key{
+    text-align: center;
+}
+
+    
+
+.button-dark{
+    color: white;
+    background-color: black;   
+
+}
+
+
+.button-wide{
+    width: 50px;
+    
+}
+
+.button-medium{
+    width: 37px;
+}
+.button-normal{
+    width: 20px;
+    background-color: rgb(65, 59, 59);
+}
+.space{
+    width: 42.5%;
+    background-color: rgb(65, 59, 59);
+}
+.space span{
+    visibility: hidden;
+
+}
+
+@keyframes key_anime {
+    from {
+        border-radius: 2px;
+        background-color: aquamarine;
+    }
+    to {
+        border-radius: 40%;
+        background-color: aqua;
+    }
+}
+
+.key{
+    height: 20px;
+    color: white;
+    font-size: 12px;
+    border: none;
+    border-radius: 3px;
+    margin:3px; 
+    transition: 200ms;
+    
+        
+}
+.key:hover {
+    background-color:rgb(108, 158, 158);
+}
+
+.key-animate {
+    animation-duration: 0.9s;
+    animation-name: key_anime;
+
+}
+
+span{
+    font-size: 7px;
+    vertical-align: middle;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.caps-lock-active{
+    background-color: aqua;
+
+}
