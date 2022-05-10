@@ -4,6 +4,13 @@ h1{
     font-size: 25px;
     font-style: italic;
 }
+h2{
+    color: rgb(99, 98, 98);
+    text-align: center;
+    font-size: 12px;
+    width: 50%;
+    margin:30px  auto;
+}
 textarea{
     display: block;
     width: 400px;

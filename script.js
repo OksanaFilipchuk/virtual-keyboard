@@ -18,6 +18,7 @@ class Keyboard {
         this.main.classList.add("keyboard");
         this.keysContainer.classList.add("keyboard-keys");
         
+        
         document.body.appendChild(this.heading);
         document.body.appendChild(this.textarea)
         document.body.appendChild(this.main);
@@ -27,9 +28,14 @@ class Keyboard {
         this.heading.innerHTML = "Virtual keyboard";
         this.textarea.value = "";
 
+        let h2 = document.createElement("h2");
+        h2.innerHTML = `PR link: https://github.com/OksanaFilipchuk/virtual-keyboard/pull/1`;
+        document.body.appendChild(h2);
+
         
         document.addEventListener("keydown", function(event)  {
-            document.querySelector("textarea").focus();            
+            document.querySelector("textarea").focus();   
+                  
             document.querySelector(`.${event.code.toLowerCase()}`).classList.add("key-animate");      
             
             })
@@ -134,21 +140,36 @@ class Keyboard {
                     break;
 
                 case "&#9650;":
-                    keyElement.classList.add("button", "button-dark");                    
+                    keyElement.classList.add("button", "button-dark", "arrowup" );                    
                     break;
 
                 case "&#9660;":
-                    keyElement.classList.add("button", "button-dark");                    
+                    keyElement.classList.add("button", "button-dark","arrowdown");                    
                     break;
 
                 case "&#9654;":
-                    keyElement.classList.add("button", "button-dark");                    
+                    keyElement.classList.add("button", "button-dark", "arrowright");                    
                     break;
                 
                 case "&#9664;":
-                    keyElement.classList.add("button", "button-dark");                    
+                    keyElement.classList.add("button", "button-dark", "arrowleft");                    
                     break;
-                
+                case "-":
+                    keyElement.classList.add("button", "button-normal", "minus");                    
+                    break;
+                case "=":
+                    keyElement.classList.add("button", "button-normal", "equal");                    
+                    break;
+                case ",":
+                    keyElement.classList.add("button", "button-normal", "comma");                    
+                    break;
+                case "`":
+                    keyElement.classList.add("button", "button-normal", "backquote");                    
+                    break;
+                case "`":
+                    keyElement.classList.add("button", "button-normal", "backquote");                    
+                    break;
+
 
                 default:
                     keyElement.classList.add("button", "button-normal", "key"+key);
